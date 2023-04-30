@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.app.json",
+  "exclude": [],
+  // need to include the src tree again for the TS Language Service
+  "include": [ "env.d.ts", "test/**/*", "src/**/*", "src/**/*.vue" ],
+  "compilerOptions": {
+    "composite": true,
+    "lib": [],
+    "types": ["node", "jsdom"]
+  }
+}
